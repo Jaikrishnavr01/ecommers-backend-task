@@ -1,0 +1,136 @@
+[{
+  "_id": {
+    "$oid": "67c499c7a57e3b5b0b2e8db7"
+  },
+  "name": "Smartphone",
+  "description": "Latest model",
+  "category": "Electronics",
+  "priceOld": 1000,
+  "priceNew": 800,
+  "discount": 20,
+  "expiryDate": {
+    "$date": "2025-03-09T17:47:51.529Z"
+  },
+  "uniqueUrl": "smartphone-1740937671529",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c49add00ccec8f6ff2e7da"
+  },
+  "name": "Smartphone",
+  "description": "Latest model",
+  "category": "Electronics",
+  "priceOld": 1000,
+  "priceNew": 800,
+  "discount": 20,
+  "vendor": {
+    "$oid": "67c4953be940978d472718ee"
+  },
+  "expiryDate": {
+    "$date": "2025-03-09T17:52:29.538Z"
+  },
+  "imageUrl": "http://example.com/product.jpg",
+  "uniqueUrl": "smartphone-1740937949539",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c49d49981a27917b2c33ca"
+  },
+  "name": "Smartphone",
+  "description": "Latest model",
+  "category": "Electronics",
+  "priceOld": 1000,
+  "priceNew": 800,
+  "discount": 20,
+  "vendor": {
+    "$oid": "67c4953be940978d472718ee"
+  },
+  "expiryDate": {
+    "$date": "2025-03-09T18:02:49.238Z"
+  },
+  "imageUrl": "http://example.com/product.jpg",
+  "uniqueUrl": "smartphone-1740938569238",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c49e3745fc664b4ca40267"
+  },
+  "name": "Smartphone",
+  "description": "Latest model",
+  "category": "Electronics",
+  "priceOld": 1000,
+  "priceNew": 800,
+  "discount": 20,
+  "vendor": {
+    "$oid": "67c4953be940978d472718ee"
+  },
+  "expiryDate": {
+    "$date": "2025-03-09T18:06:47.285Z"
+  },
+  "imageUrl": "http://example.com/product.jpg",
+  "uniqueUrl": "smartphone-1740938807285",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c49ef54d69f61baa3e5c37"
+  },
+  "name": "Smartphone",
+  "description": "Latest model",
+  "category": "Electronics",
+  "priceOld": 1000,
+  "priceNew": 800,
+  "discount": 20,
+  "vendor": {
+    "$oid": "67c4953be940978d472718ee"
+  },
+  "expiryDate": {
+    "$date": "2025-03-09T18:09:57.573Z"
+  },
+  "imageUrl": "http://example.com/product.jpg",
+  "uniqueUrl": "smartphone-1740938997573",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c49ef74d69f61baa3e5c39"
+  },
+  "name": "Smartphone",
+  "description": "Latest model",
+  "category": "Electronics",
+  "priceOld": 1000,
+  "priceNew": 800,
+  "discount": 20,
+  "vendor": {
+    "$oid": "67c4953be940978d472718ee"
+  },
+  "expiryDate": {
+    "$date": "2025-03-09T18:09:59.477Z"
+  },
+  "imageUrl": "http://example.com/product.jpg",
+  "uniqueUrl": "smartphone-1740938999477",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c49f4e4d69f61baa3e5c42"
+  },
+  "name": "Smartphone",
+  "description": "Latest model",
+  "category": "Electronics",
+  "priceOld": 1000,
+  "priceNew": 800,
+  "discount": 20,
+  "vendor": {
+    "$oid": "67c49f1f4d69f61baa3e5c3c"
+  },
+  "expiryDate": {
+    "$date": "2025-03-09T18:11:26.519Z"
+  },
+  "imageUrl": "http://example.com/product.jpg",
+  "uniqueUrl": "smartphone-1740939086519",
+  "__v": 0
+}]

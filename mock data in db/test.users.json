@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "67c4953be940978d472718ee"
+  },
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "$2b$10$i8azVXDShRPxP70.IOkdPeNuKNpQh011i1bxnFamzXEV2anSqR8za",
+  "role": "vendor",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c495d1e940978d472718f4"
+  },
+  "name": "John Doe 1",
+  "email": "johndoe@example1.com",
+  "password": "$2b$10$YXN/MPN7rXuRVWhqYsOReui6LXyBRUThfxqWT4SLYyDRP4MQq3gG6",
+  "role": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c49f1f4d69f61baa3e5c3c"
+  },
+  "name": "John Doe 21",
+  "email": "johndoe@example12.com",
+  "password": "$2b$10$qDrC/jSZY4dAqdJmE7c8Sev2tRw0SpPsxlTEiUHz8X4AuSddt4oSu",
+  "role": "staff",
+  "__v": 0
+}]

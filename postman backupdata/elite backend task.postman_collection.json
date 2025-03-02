@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "c0b13742-e436-438c-a333-c4f33630fa9c",
+		"name": "elite backend task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22712855",
+		"_collection_link": "https://gold-escape-88797.postman.co/workspace/Team-Workspace~d62d6485-834c-44bd-82fd-35455746a354/collection/22712855-c0b13742-e436-438c-a333-c4f33630fa9c?action=share&source=collection_link&creator=22712855"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe 1\",\r\n  \"email\": \"johndoe@example1.com\",\r\n  \"password\": \"password123\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"johndoe@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzQ5NTNiZTk0MDk3OGQ0NzI3MThlZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDkzNzQ3MCwiZXhwIjoxNzQxMDIzODcwfQ.KE3CxG3rL9MjOIwCP0o9oUSAID_7znzrqC0aLDpH5Hc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Smartphone\",\r\n  \"description\": \"Latest model\",\r\n  \"category\": \"Electronics\",\r\n  \"priceOld\": 1000,\r\n  \"priceNew\": 800,\r\n  \"imageUrl\": \"http://example.com/product.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzQ5NTNiZTk0MDk3OGQ0NzI3MThlZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDkzNzQ3MCwiZXhwIjoxNzQxMDIzODcwfQ.KE3CxG3rL9MjOIwCP0o9oUSAID_7znzrqC0aLDpH5Hc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update products by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzQ5NTNiZTk0MDk3OGQ0NzI3MThlZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDkzNzQ3MCwiZXhwIjoxNzQxMDIzODcwfQ.KE3CxG3rL9MjOIwCP0o9oUSAID_7znzrqC0aLDpH5Hc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Smartphone\",\r\n  \"description\": \"Latest modeldcfdfdfd\",\r\n  \"category\": \"Electronics\",\r\n  \"priceOld\": 10,\r\n  \"priceNew\": 800,\r\n  \"imageUrl\": \"http://example.com/product.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67c499c7a57e3b5b0b2e8db7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete products by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzQ5NTNiZTk0MDk3OGQ0NzI3MThlZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MDkzNzQ3MCwiZXhwIjoxNzQxMDIzODcwfQ.KE3CxG3rL9MjOIwCP0o9oUSAID_7znzrqC0aLDpH5Hc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Smartphone\",\r\n  \"description\": \"Latest modeldcfdfdfd\",\r\n  \"category\": \"Electronics\",\r\n  \"priceOld\": 10,\r\n  \"priceNew\": 800,\r\n  \"imageUrl\": \"http://example.com/product.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67c499c7a57e3b5b0b2e8db7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
